@@ -21,7 +21,6 @@ public class DataSourceConfig {
 	@Bean(name = "DBDataSource")	
 	@ConfigurationProperties(prefix="spring.datasource.other") //告诉自动加载配置的属性
 	public DataSource dataSource() {
-		System.out.println(1);
 		return  DataSourceBuilder.create().build();
 	}
  
