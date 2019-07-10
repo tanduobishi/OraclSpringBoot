@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table style="border: 1px solid black;">
+ <tr th:each="emp : ${employees}">
+  <td th:text="${emp.EMPNO}"></td>
+  <td th:text="${emp.ENAME}"></td>
+  <td th:text="${emp.JOB}"></td>
+  <td th:text="${emp.MGR}"></td>
+  <td th:text="${emp.HIREDATE}"></td>
+  <td th:text="${emp.SAL}"></td>
+  <td th:text="${emp.COMM}"></td>
+  <td th:text="${emp.DEPTNO}"></td>
+ </tr>
+</table>
+<p>不好使</p>
+<hr>
+</body>
+</html>
